@@ -2,6 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <title>Project1 BoardQuest - CaseStudy</title>
 </head>
@@ -12,10 +19,10 @@
     <div>
       <img src="img/logo_(or_name)_section@1x.jpg" alt="Samantha Landingham">
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="bullet-less-list" class="header-nav">
+          <li style="display:inline"><a class="nav-button" href="index.html" id="work-link">Work</a></li>
+          <li style="display:inline"><a class="nav-button" href="about.html" id="about-link">About</a></li>
+          <li style="display:inline"><a class="nav-button" href="#contact" id="contact-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -24,23 +31,23 @@
   <main>
     <div>
       <div>
-        <h2>Board Quest - Case Study</h2>
-        <h3>Native App for iOS & Android</h3>
+        <h2 style="text-align:center">Board Quest - Case Study</h2>
+        <h3 style="text-align:center">Native App for iOS & Android</h3>
         <picture>
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@1x.jpg" alt="Board Quest - Case Study" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@2x.jpg" alt="Board Quest - Case Study">
         </picture>
         <p>
-          Description: An app that allows users to
+          <b>Description:</b> An app that allows users to
           find games that their friends and family
           would enjoy. <br>
-          Focus: low, mid, and high-fidelity
+          <b>Focus:</b> low, mid, and high-fidelity
           wireframes; mobile gestures; user
           feedback; mockups
         </p>
       </div>
       <div>
-        <h2>My Process</h2>
+        <h2 style="text-align:center">My Process</h2>
         <h3>Objective</h3>
         <p>
           To design the iOS and Android version of
@@ -52,7 +59,7 @@
           Analysis of 2 to 3 competitor apps.
         </p>
         <h3>Design Requirements</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Must follow iOS and Material Design
             guidelines</li>
           <li>Native mobile design patterns used</li>
@@ -68,7 +75,7 @@
       </div>
       <div>
         <h3>Problem</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Users are looking to plan a game night
             (the day of or when planning ahead).</li>
           <li>Users are looking for potential gifts for
@@ -79,7 +86,7 @@
             their friends and family would enjoy.</li>
         </ul>
         <h3>Solution</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Create a native app that makes for
             easier access, where users do not
             have to rely solely on having internet
@@ -95,7 +102,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_bitmap@1x.jpg" alt="User Flow Diagram for Board Quest App" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_bitmap@2x.jpg" alt="User Flow Diagram for Board Quest App">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <li>Used FigJam for the user flow in this
             project.</li>
           <li>The final screens overall were identical
@@ -127,7 +134,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_7@1x.jpg" alt="Digitized Wireframes (iOS)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_7@2x.jpg" alt="Digitized Wireframes (iOS)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <p>For the iOS screens used:</p>
           <li>SF Pro font</li>
           <li>Referenced the iOS - Human Interface
@@ -140,7 +147,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_8@1x.jpg" alt="Digitized Wireframes (iOS)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_8@2x.jpg" alt="Digitized Wireframes (iOS)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <p>For the iOS screens used:</p>
           <li>SF Symbols for most of the icons in
             the top and bottom navigation</li>
@@ -154,7 +161,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_9@1x.jpg" alt="Digitized Wireframes (Android)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_9@2x.jpg" alt="Digitized Wireframes (Android)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <p>For the Android screens used:</p>
           <li>Roboto font</li>
           <li>Referenced Material.io for guidance</li>
@@ -168,7 +175,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_10@1x.jpg" alt="Digitized Wireframes (Android)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_10@2x.jpg" alt="Digitized Wireframes (Android)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <p>For the Android screens used:</p>
           <li>Most of the icons were pulled from the
             Resources page in Material.io</li>
@@ -182,7 +189,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_11@1x.jpg" alt="Mobile Gestures (iOS)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_11@2x.jpg" alt="Mobile Gestures (iOS)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <li>Looked at how the mobile gestures
             differentiated between both iOS and
             Android screens.</li>
@@ -194,7 +201,7 @@
           <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_12@1x.jpg" alt="Digitized Wireframes (Android)" media="(max-width:767px)">
           <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_12@2x.jpg" alt="Digitized Wireframes (Android)">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <li>Looked at how gestures differed
             between call to action buttons,
             selecting icons, text fields, and
@@ -203,7 +210,7 @@
       </div>
       <div>
         <h3>User Feedback</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>
             (iOS) "I noticed in the reviews that it's
             sorted oldest reviews first. Idk if it
@@ -269,7 +276,7 @@
       </div>
       <div>
         <h3>Challenges</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Difficulties coming up with the original
             concept.</li>
           <li>Coming up with ways to differentiate
@@ -278,7 +285,7 @@
             assignment.</li>
         </ul>
         <h3>Workaround</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Jotted down a list of things I enjoy and
             was able to ideate from this.</li>
           <li>Referencing the iOS - Human Interface
@@ -294,7 +301,7 @@
         <h3>Final Showcase</h3>
         <p>The original concept differed from the
           final results in that:</p>
-        <ul>
+        <ul class="green-bullet">
           <li>There was no like/favorited icons
             added to the games screens or next to
             the game names.</li>
@@ -308,7 +315,7 @@
             include this in the final screens.
         </ul>
         <h3>Takeaways</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>For future iterations of the app, would
             play with the thought of using different
             color schemes for the iOS and Android screens.</li>
@@ -320,22 +327,21 @@
     </div>
   </main>
 
-  <footer>
+  <footer id="contact">
     <div>
-      <h2>Reach Out</h2>
-      <p>I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
+      <h2 class="footer-title">Reach Out</h2>
+      <p class="footer-paragraph">I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
       <div>
         <nav>
-          <p>Looking to get in touch via email, Skype, or LinkedIn? <br>
+          <p class="footer-paragraph">Looking to get in touch via email, Skype, or LinkedIn? <br>
             Or looking to see more of my work through Bēhance? <br>
             Click one of the links below.</p>
-
-          <div>
-            <a href="mailto:sammie.m.doll@gmail.com">Send Email</a> <br>
+          <div style="text-align:center">
+            <a href="mailto:sammie.m.doll@gmail.com" class="button">Send Email</a> <br>
+            <a class="nav-button" href="live:.cid.20722c14566ce500">Skype</a>
           </div>
-          <a href="live:.cid.20722c14566ce500">Skype</a>
           <div>
-            <ul>
+            <ul class="bullet-less-list">
               <li><a href="https://www.linkedin.com/in/samantha-landingham-94509b217/" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -352,7 +358,7 @@
           </div>
         </nav>
       </div>
-      <p>© Samantha Landingham 2022</p>
+      <p class="copyright-section">© Samantha Landingham 2022</p>
     </div>
   </footer>
 

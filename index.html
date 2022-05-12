@@ -2,6 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <title>SamanthaLandingham UX/UI Designer LakeForest</title>
 </head>
@@ -12,33 +19,35 @@
     <div>
       <img src="img/logo_(or_name)_section@1x.jpg" alt="Samantha Landingham">
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="bullet-less-list" class="header-nav">
+          <li style="display:inline"><a class="nav-button" href="index.html" id="work-link">Work</a></li>
+          <li style="display:inline"><a class="nav-button" href="about.html" id="about-link">About</a></li>
+          <li style="display:inline"><a class="nav-button" href="#contact" id="contact-link">Contact</a></li>
         </ul>
       </nav>
-      <h1>Hello, my name is Samantha Landingham.</h1>
-      <span>I am a UI/UX Designer based in Lake Forest, CA.</span>
+      <h1 style="text-align:center">Hello, my name is Samantha Landingham.</h1>
+      <div class="header-span">
+        <span>I am a UI/UX Designer based in Lake Forest, CA.</span>
+      </div>
     </div>
   </header>
 
   <main>
     <div>
-      <h2>My Work</h2>
+      <h2 style="text-align:center">My Work</h2>
       <picture>
         <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@1x.jpg" alt="Board Quest - Case Study" media="(max-width:767px)">
         <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@2x.jpg" alt="Board Quest - Case Study">
       </picture>
       <h3>Board Quest - Case Study</h3>
       <h4>Native App for iOS & Android</h4>
-      <p>Description: An app that allows users to <br>
+      <p><span style="font-weight:700">Description:</span> An app that allows users to <br>
         find games that their friends and family <br>
         would enjoy. <br>
-        Focus: low, mid, and high-fidelity <br>
+        <span style="font-weight:700">Focus:</span> low, mid, and high-fidelity <br>
         wireframes; mobile gestures; user <br> feedback; mockups</p>
-      <nav>
-        <a href="project1_boardquest.html">View Project</a>
+      <nav style="text-align:center">
+        <a href="project1_boardquest.html" class="button">View Project</a>
       </nav>
       <br>
       <picture>
@@ -47,35 +56,34 @@
       </picture>
       <h3>Fortune Saver - Case Study</h3>
       <h4>Responsive Web App</h4>
-      <p>Description: A money saving tool that <br>
+      <p><span style="font-weight:700">Description:</span> A money saving tool that <br>
         helps people save money quickly in <br>
         preparation for a big purchase or <br>
         expenditure. <br>
-        Focus: user flow diagrams; low, mid, and <br>
+        <span style="font-weight:700">Focus:</span> user flow diagrams; low, mid, and <br>
         high-fidelity wireframes; user feedback; <br>
         user test analysis; mockups</p>
-      <nav>
-        <a href="project2_fortunesaver.html">View Project</a>
+      <nav style="text-align:center">
+        <a href="project2_fortunesaver.html" class="button">View Project</a>
       </nav>
     </div>
   </main>
 
-  <footer>
+  <footer id="contact">
     <div>
-      <h2>Reach Out</h2>
-      <p>I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
+      <h2 class="footer-title">Reach Out</h2>
+      <p class="footer-paragraph">I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
       <div>
         <nav>
-          <p>Looking to get in touch via email, Skype, or LinkedIn? <br>
+          <p class="footer-paragraph">Looking to get in touch via email, Skype, or LinkedIn? <br>
             Or looking to see more of my work through Bēhance? <br>
             Click one of the links below.</p>
-
-          <div>
-            <a href="mailto:sammie.m.doll@gmail.com">Send Email</a> <br>
+          <div style="text-align:center">
+            <a href="mailto:sammie.m.doll@gmail.com" class="button">Send Email</a> <br>
+            <a class="nav-button" href="live:.cid.20722c14566ce500">Skype</a>
           </div>
-          <a href="live:.cid.20722c14566ce500">Skype</a>
           <div>
-            <ul>
+            <ul class="bullet-less-list">
               <li><a href="https://www.linkedin.com/in/samantha-landingham-94509b217/" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -92,7 +100,7 @@
           </div>
         </nav>
       </div>
-      <p>© Samantha Landingham 2022</p>
+      <p class="copyright-section">© Samantha Landingham 2022</p>
     </div>
   </footer>
 

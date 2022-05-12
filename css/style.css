@@ -1,0 +1,148 @@
+/*
+Colors used:
+Primary (Green): #8bc34a
+Primary (Light): #bef67a
+Primary (Dark): #5a9216
+Secondary (Orange): #ffb74d;
+Secondary (Light): #ffe97d;
+Secondary (Dark): #c88719;
+Black: #000000;
+White: #FFFFFF;
+*/
+body {
+  background-color: rgba(190, 246, 122, .25);
+  font-family: 'Open Sans', sans-serif;
+}
+
+header {
+  background-color: #8bc34a;
+}
+
+h1, h2, h3, h4 {
+  line-height: 22px;
+}
+
+h1 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: #000000;
+}
+
+h3 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+h4 {
+  font-size: 16px;
+  font-weight: 500;
+  color: #000000;
+}
+
+p {
+  font-size: 14px;
+  font-weight: 400;
+  color: #000000;
+}
+
+footer {
+  background-color: #8bc34a;
+}
+
+ul {
+  list-style-type: none;
+}
+
+img {
+  width: 100%;
+}
+
+.bold-words{
+  text-weight: 700;
+}
+
+.bullet-less-list {
+  list-style-type: none;
+}
+
+.green-bullet li::before {
+  content: "•";
+  color: #5a9216;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em
+}
+
+.header-nav {
+  font-size: 16px;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.header-span {
+  font-size: 18px;
+  font-weight: 400;
+  color: #ffffff;
+  text-align: center;
+}
+
+.copyright-section {
+  font-size: 10px;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.footer-title {
+  font-size: 18px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.footer-paragraph {
+  font-size: 14px;
+  font-weight: 700;
+  color: #ffffff;
+  text-align: center;
+}
+
+.button {
+  background: #FFB74D;
+  border: 1px solid #C88719;
+  font-family: OpenSans-Bold;
+  font-size: 14px;
+  color: #FFFFFF;
+  letter-spacing: 0;
+  display: inline-block;
+  padding-top: 12px;
+  padding-left: 30px;
+  padding-right: 30px;
+  padding-bottom: 12px;
+  text-decoration: none;
+}
+
+.button:hover {
+  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  text-decoration: none;
+}
+
+.nav-button {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.nav-button:visited {
+  color: #c88719;
+}
+
+.nav-button:hover,
+.nav-button:focus {
+  color: #ffe97d;
+}

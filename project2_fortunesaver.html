@@ -2,6 +2,13 @@
 <html lang="en" dir="ltr">
 
 <head>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" integrity="sha512-NhSC1YmyruXifcj/KFRWoC561YpHpc5Jtzgvbuzx5VozKpWvQ+4nXhPdFgmx8xqexRcpAglTj9sIBWINXa8x5w==" crossorigin="anonymous"
+    referrerpolicy="no-referrer" />
+  <link rel="stylesheet" type="text/css" href="css/style.css">
   <meta charset="utf-8">
   <title>Project2 FortuneSaver - CaseStudy</title>
 </head>
@@ -12,10 +19,10 @@
     <div>
       <img src="img/logo_(or_name)_section@1x.jpg" alt="Samantha Landingham">
       <nav>
-        <ul>
-          <li><a href="index.html">Work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="#contact">Contact</a></li>
+        <ul class="bullet-less-list" class="header-nav">
+          <li style="display:inline"><a class="nav-button" href="index.html" id="work-link">Work</a></li>
+          <li style="display:inline"><a class="nav-button" href="about.html" id="about-link">About</a></li>
+          <li style="display:inline"><a class="nav-button" href="#contact" id="contact-link">Contact</a></li>
         </ul>
       </nav>
     </div>
@@ -25,22 +32,23 @@
     <div>
 
       <div>
-        <h2>Fortune Saver - Case Study</h2>
-        <h3>Responsive Web App</h3>
+        <h2 style="text-align:center">Fortune Saver - Case Study</h2>
+        <h3 style="text-align:center">Responsive Web App</h3>
         <picture>
           <source srcset="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@1x.jpg" alt="Fortune Saver - Case Study" media="(max-width:767px)">
           <img src="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@2x.jpg" alt="Fortune Saver - Case Study">
         </picture>
-        <p>Description: A money saving tool that
+        <p><b>Description:</b> A money saving tool that
           helps people save money quickly in
           preparation for a big purchase or
           expenditure. <br>
-          Focus: user flow diagrams; low, mid, and
+          <b>Focus:</b> user flow diagrams; low, mid, and
           high-fidelity wireframes; user feedback;
-          user test analysis; mockups</p>
+          user test analysis; mockups
+        </p>
       </div>
       <div>
-        <h2>My Process</h2>
+        <h2 style="text-align:center">My Process</h2>
         <h3>Objective</h3>
         <p>(What) A responsive website, web app,
           and/or mobile app allowing all data on
@@ -73,7 +81,7 @@
       </div>
       <div>
         <h3>Problem</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>As a new user, I need to be able to
             create a profile, so that the financial
             advise I receive is personalized to me,
@@ -88,7 +96,7 @@
             save accordingly.</li>
         </ul>
         <h3>Solution</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Having a responsive web app will make
             it easier for users to access across
             varying platforms.</li>
@@ -108,7 +116,7 @@
           <source srcset="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_4@1x.jpg" alt="User Flow Diagram for Fortune Saver App" media="(max-width:767px)">
           <img src="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_4@2x.jpg" alt="User Flow Diagram for Fortune Saver App">
         </picture>
-        <ul>
+        <ul class="green-bullet">
           <li>Used FigJam for the user flow.</li>
         </ul>
       </div>
@@ -150,45 +158,44 @@
       <div>
         <h3>User Feedback</h3>
         <div>
-          <p>Scenario: You are planning on saving
+          <p><b>Scenario:</b> You are planning on saving
             money for an upcoming trip and are
             looking to add a new savings goal
             through the Fortune Saver app. How
-            would you go about this? <br>
-        </div>
-        Participant Name: Mike N. <br>
-        Task: <br>
-        <ul>
-          <li>"I like it. If I were to use it to make
-            financial goals, it seems easy to create
-            and set those up. But it makes sense
-            and I think that's important. There
-            were enough cues that didn't make it
-            confusing."</li>
-          <li>"I think the only part that I didn't know
-            how would work was how would I be
-            adding money towards the goal? Like
-            idk if there needs to be another slide
-            where you tap on an existing goal and
-            you can see more details/options
-            regarding it."</li>
-          <li>"But using the app itself was smooth
-            and user friendly. The steps were
-            logical for me."
-          </li>
-        </ul>
-        </p>
-        <p>
-          Participant Name: Sarah G. <br>
-          Task: <br>
-        <ul>
-          <li>"So right off the bat I like that you can
-            set a goal and see the goals that you
-            have already achieved."</li>
-          <li>"Pretty straightforward, easy to
-            understand."</li>
-        </ul>
-        </p>
+            would you go about this?</p>
+          <p><b>Participant Name: Mike N.</b> <br>
+          <b>Task:</b> <br>
+          <ul class="green-bullet">
+            <li>"I like it. If I were to use it to make
+              financial goals, it seems easy to create
+              and set those up. But it makes sense
+              and I think that's important. There
+              were enough cues that didn't make it
+              confusing."</li>
+            <li>"I think the only part that I didn't know
+              how would work was how would I be
+              adding money towards the goal? Like
+              idk if there needs to be another slide
+              where you tap on an existing goal and
+              you can see more details/options
+              regarding it."</li>
+            <li>"But using the app itself was smooth
+              and user friendly. The steps were
+              logical for me."
+            </li>
+          </ul>
+          </p>
+          <p>
+            <b>Participant Name: Sarah G.</b> <br>
+            <b>Task:</b> <br>
+          <ul class="green-bullet">
+            <li>"So right off the bat I like that you can
+              set a goal and see the goals that you
+              have already achieved."</li>
+            <li>"Pretty straightforward, easy to
+              understand."</li>
+          </ul>
+          </p>
       </div>
       <div>
         <!-- User Test Analysis -->
@@ -206,7 +213,7 @@
       </div>
       <div>
         <h3>Challenges</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Incorporating color to the high-fidelity
             screens.</li>
           <li>Coming up with the original user flow.</li>
@@ -214,7 +221,7 @@
             screens.</li>
         </ul>
         <h3>Workaround</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Referenced the Color Interface Tool
             from Material.io</li>
           <li>Drew multiple concepts and narrowed
@@ -227,7 +234,7 @@
         <h3>Final Showcase</h3>
         <p>The original concept differed from the
           final results in that:</p>
-        <ul>
+        <ul class="green-bullet">
           <li>The hamburger menu was taken out in
             both the mid and high-fidelity screens.
             Added the app logo in its place.</li>
@@ -238,7 +245,7 @@
             additional screens.</li>
         </ul>
         <h3>Takeaways</h3>
-        <ul>
+        <ul class="green-bullet">
           <li>Would look at adding further screens
             in the second iteration of the app.</li>
           <li>Would look to incorporate animation in
@@ -249,22 +256,21 @@
     </div>
   </main>
 
-  <footer>
+  <footer id="contact">
     <div>
-      <h2>Reach Out</h2>
-      <p>I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
+      <h2 class="footer-title">Reach Out</h2>
+      <p class="footer-paragraph">I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
       <div>
         <nav>
-          <p>Looking to get in touch via email, Skype, or LinkedIn? <br>
+          <p class="footer-paragraph">Looking to get in touch via email, Skype, or LinkedIn? <br>
             Or looking to see more of my work through Bēhance? <br>
             Click one of the links below.</p>
-
-          <div>
-            <a href="mailto:sammie.m.doll@gmail.com">Send Email</a> <br>
+          <div style="text-align:center">
+            <a href="mailto:sammie.m.doll@gmail.com" class="button">Send Email</a> <br>
+            <a class="nav-button" href="live:.cid.20722c14566ce500">Skype</a>
           </div>
-          <a href="live:.cid.20722c14566ce500">Skype</a>
           <div>
-            <ul>
+            <ul class="bullet-less-list">
               <li><a href="https://www.linkedin.com/in/samantha-landingham-94509b217/" target="_blank">
                   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
                     <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
@@ -281,7 +287,7 @@
           </div>
         </nav>
       </div>
-      <p>© Samantha Landingham 2022</p>
+      <p class="copyright-section">© Samantha Landingham 2022</p>
     </div>
   </footer>
 

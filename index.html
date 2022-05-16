@@ -16,89 +16,103 @@
 <body>
 
   <header>
-    <div>
-      <img src="img/logo_(or_name)_section@1x.jpg" alt="Samantha Landingham">
+    <div class="container">
+      <img src="img/logo_(or_name)_section@1x.jpg" alt="Samantha Landingham" class="logo">
       <nav>
         <ul class="bullet-less-list" class="header-nav">
-          <li style="display:inline"><a class="nav-button" href="index.html" id="work-link">Work</a></li>
-          <li style="display:inline"><a class="nav-button" href="about.html" id="about-link">About</a></li>
-          <li style="display:inline"><a class="nav-button" href="#contact" id="contact-link">Contact</a></li>
+          <li style="display:inline"><a class="nav-button" href="index.html">Work</a></li>
+          <li style="display:inline"><a class="nav-button" href="about.html">About</a></li>
+          <li style="display:inline"><a class="nav-button" href="#contact">Contact</a></li>
         </ul>
       </nav>
-      <h1 style="text-align:center">Hello, my name is Samantha Landingham.</h1>
-      <div class="header-span">
-        <span>I am a UI/UX Designer based in Lake Forest, CA.</span>
+      <div id="hero">
+        <h1>Hello, my name is Samantha Landingham.</h1>
+        <div class="header-span">
+          <span>I am a UI/UX Designer based in Lake Forest, CA.</span>
+        </div>
       </div>
     </div>
   </header>
 
   <main>
-    <div>
+    <div id="work" class="container">
       <h2 style="text-align:center">My Work</h2>
-      <picture>
-        <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@1x.jpg" alt="Board Quest - Case Study" media="(max-width:767px)">
-        <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@2x.jpg" alt="Board Quest - Case Study">
-      </picture>
-      <h3>Board Quest - Case Study</h3>
-      <h4>Native App for iOS & Android</h4>
-      <p><span style="font-weight:700">Description:</span> An app that allows users to <br>
-        find games that their friends and family <br>
-        would enjoy. <br>
-        <span style="font-weight:700">Focus:</span> low, mid, and high-fidelity <br>
-        wireframes; mobile gestures; user <br> feedback; mockups</p>
-      <nav style="text-align:center">
-        <a href="project1_boardquest.html" class="button">View Project</a>
-      </nav>
-      <br>
-      <picture>
-        <source srcset="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@1x.jpg" alt="Fortune Saver - Case Study" media="(max-width:767px)">
-        <img src="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@2x.jpg" alt="Fortune Saver - Case Study">
-      </picture>
-      <h3>Fortune Saver - Case Study</h3>
-      <h4>Responsive Web App</h4>
-      <p><span style="font-weight:700">Description:</span> A money saving tool that <br>
-        helps people save money quickly in <br>
-        preparation for a big purchase or <br>
-        expenditure. <br>
-        <span style="font-weight:700">Focus:</span> user flow diagrams; low, mid, and <br>
-        high-fidelity wireframes; user feedback; <br>
-        user test analysis; mockups</p>
-      <nav style="text-align:center">
-        <a href="project2_fortunesaver.html" class="button">View Project</a>
-      </nav>
+      <div class="row">
+        <div class="column">
+          <picture>
+            <source srcset="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@1x.jpg" alt="Board Quest - Case Study" media="(max-width:767px)">
+            <img src="img/bq_case_study_images/bq_compressed_images/bq_case_study_page_1@2x.jpg" alt="Board Quest - Case Study">
+          </picture>
+          <h3><b>Board Quest - Case Study</b></h3>
+          <h4>Native App for iOS & Android</h4>
+          <p><b>Description:</b> An app that allows users to <br>
+            find games that their friends and family <br>
+            would enjoy. <br>
+            <b>Focus:</b> low, mid, and high-fidelity <br>
+            wireframes; mobile gestures; user <br> feedback; mockups
+          </p>
+          <nav style="text-align:center">
+            <a href="project1_boardquest.html" class="button">View Project</a>
+          </nav>
+        </div>
+      </div>
+      <div class="row">
+        <div class="column">
+          <picture>
+            <source srcset="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@1x.jpg" alt="Fortune Saver - Case Study" media="(max-width:767px)">
+            <img src="img/fs_case_study_images/fs_compressed_images/fs_case_study_page_1@2x.jpg" alt="Fortune Saver - Case Study">
+          </picture>
+          <h3><b>Fortune Saver - Case Study</b></h3>
+          <h4>Responsive Web App</h4>
+          <p><b>Description:</b> A money saving tool that <br>
+            helps people save money quickly in <br>
+            preparation for a big purchase or <br>
+            expenditure. <br>
+            <b>Focus:</b> user flow diagrams; low, mid, and <br>
+            high-fidelity wireframes; user feedback; <br>
+            user test analysis; mockups
+          </p>
+          <nav style="text-align:center">
+            <a href="project2_fortunesaver.html" class="button">View Project</a>
+          </nav>
+        </div>
+      </div>
     </div>
   </main>
 
-  <footer id="contact">
+  <footer id="contact" class="container">
     <div>
       <h2 class="footer-title">Reach Out</h2>
       <p class="footer-paragraph">I am always looking for opportunities to grow as a designer and to go even further with my current skill set.</p>
-      <div>
-        <nav>
-          <p class="footer-paragraph">Looking to get in touch via email, Skype, or LinkedIn? <br>
-            Or looking to see more of my work through Bēhance? <br>
-            Click one of the links below.</p>
-          <div style="text-align:center">
-            <a href="mailto:sammie.m.doll@gmail.com" class="button">Send Email</a> <br>
-            <a class="nav-button" href="live:.cid.20722c14566ce500">Skype</a>
-          </div>
-          <div>
-            <ul class="bullet-less-list">
-              <li><a href="https://www.linkedin.com/in/samantha-landingham-94509b217/" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
-                  </svg></a></li>
-              <li><a href="https://www.behance.net/samlandingham" target="_blank">
-                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
-                    <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
-                    <path
-                      d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z" />
-                  </svg></a></li>
-            </ul>
-          </div>
-        </nav>
+      <p class="footer-paragraph">Looking to get in touch via email, Skype, or LinkedIn? <br>
+        Or looking to see more of my work through Bēhance? <br>
+        Click one of the links below.</p>
+      <div style="text-align:center">
+        <div style="padding:10px">
+          <a href="mailto:sammie.m.doll@gmail.com" class="button">Send Email</a> <br>
+        </div>
+        <div class="layout-link-icons" style="padding:10px">
+          <a href="live:.cid.20722c14566ce500" target="_blank" class="link-icon">
+            <svg viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg">
+              <title />
+              <g id="Skype">
+                <path
+                  d="M26.49,30H5.5A3.35,3.35,0,0,1,3,29a3.35,3.35,0,0,1-1-2.48V5.5A3.35,3.35,0,0,1,3,3,3.35,3.35,0,0,1,5.5,2h21A3.35,3.35,0,0,1,29,3,3.35,3.35,0,0,1,30,5.5v21A3.52,3.52,0,0,1,26.49,30Zm-6.58-5.39a4.88,4.88,0,0,0,4.86-4.88A4.57,4.57,0,0,0,23.9,17,6.11,6.11,0,0,0,24,15.9a7.88,7.88,0,0,0-.64-3.17,8.09,8.09,0,0,0-7.47-4.94,6.35,6.35,0,0,0-1.32.08,4.69,4.69,0,0,0-2.63-.78A4.63,4.63,0,0,0,8.55,8.51,4.69,4.69,0,0,0,7.13,12a5,5,0,0,0,.78,2.68,5.3,5.3,0,0,0-.15,1.26,7.64,7.64,0,0,0,.65,3.16,8.41,8.41,0,0,0,1.73,2.58,7.87,7.87,0,0,0,2.57,1.73,8.06,8.06,0,0,0,3.18.63,10.81,10.81,0,0,0,1.5-.11A4.72,4.72,0,0,0,19.91,24.61ZM15.8,21.9a6.66,6.66,0,0,1-2.26-.35,4.81,4.81,0,0,1-1.77-1.16A1.9,1.9,0,0,1,11,19a1,1,0,0,1,.36-.86,1.23,1.23,0,0,1,.79-.28c.47,0,1,.36,1.54,1.08a2.19,2.19,0,0,0,.43.4,3.42,3.42,0,0,0,.67.3,4,4,0,0,0,1.37.23,2.06,2.06,0,0,0,1.63-.67,1.09,1.09,0,0,0,.37-.73,2.12,2.12,0,0,0,0-.29c0-.16-.18-.33-.45-.52a4.26,4.26,0,0,0-2.07-.7,8.05,8.05,0,0,1-3.07-1.1,2.61,2.61,0,0,1-1.4-2.24l0-.29a3.43,3.43,0,0,1,1.2-2.48,4.45,4.45,0,0,1,2.39-1c.32,0,.64,0,1,0a5.28,5.28,0,0,1,3.8,1.39,1.66,1.66,0,0,1,.76,1.34,1,1,0,0,1-.4.83,1,1,0,0,1-.66.27,1,1,0,0,1-.6-.27c-.22-.17-.46-.37-.73-.6a8.68,8.68,0,0,0-.95-.69,2.44,2.44,0,0,0-2.47,0c-.57.34-.85.72-.85,1.13a1.28,1.28,0,0,0,.2.6,1.74,1.74,0,0,0,1.06.55c.57.15,1.15.27,1.74.39,2.15.44,3.47,1.29,4,2.57a2.49,2.49,0,0,1,.21,1,3.38,3.38,0,0,1-.15.84,3.07,3.07,0,0,1-.75,1.2,5.08,5.08,0,0,1-1.46,1.06,4.57,4.57,0,0,1-1.82.46A8.51,8.51,0,0,1,15.8,21.9Z" />
+              </g>
+            </svg></a>
+          <a href="https://www.linkedin.com/in/samantha-landingham-94509b217/" target="_blank" class="link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M416 32H31.9C14.3 32 0 46.5 0 64.3v383.4C0 465.5 14.3 480 31.9 480H416c17.6 0 32-14.5 32-32.3V64.3c0-17.8-14.4-32.3-32-32.3zM135.4 416H69V202.2h66.5V416zm-33.2-243c-21.3 0-38.5-17.3-38.5-38.5S80.9 96 102.2 96c21.2 0 38.5 17.3 38.5 38.5 0 21.3-17.2 38.5-38.5 38.5zm282.1 243h-66.4V312c0-24.8-.5-56.7-34.5-56.7-34.6 0-39.9 27-39.9 54.9V416h-66.4V202.2h63.7v29.2h.9c8.9-16.8 30.6-34.5 62.9-34.5 67.2 0 79.7 44.3 79.7 101.9V416z" />
+            </svg></a>
+          <a href="https://www.behance.net/samlandingham" target="_blank" class="link-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512">
+              <!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+              <path
+                d="M186.5 293c0 19.3-14 25.4-31.2 25.4h-45.1v-52.9h46c18.6.1 30.3 7.8 30.3 27.5zm-7.7-82.3c0-17.7-13.7-21.9-28.9-21.9h-39.6v44.8H153c15.1 0 25.8-6.6 25.8-22.9zm132.3 23.2c-18.3 0-30.5 11.4-31.7 29.7h62.2c-1.7-18.5-11.3-29.7-30.5-29.7zM448 80v352c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V80c0-26.5 21.5-48 48-48h352c26.5 0 48 21.5 48 48zM271.7 185h77.8v-18.9h-77.8V185zm-43 110.3c0-24.1-11.4-44.9-35-51.6 17.2-8.2 26.2-17.7 26.2-37 0-38.2-28.5-47.5-61.4-47.5H68v192h93.1c34.9-.2 67.6-16.9 67.6-55.9zM380 280.5c0-41.1-24.1-75.4-67.6-75.4-42.4 0-71.1 31.8-71.1 73.6 0 43.3 27.3 73 71.1 73 33.2 0 54.7-14.9 65.1-46.8h-33.7c-3.7 11.9-18.6 18.1-30.2 18.1-22.4 0-34.1-13.1-34.1-35.3h100.2c.1-2.3.3-4.8.3-7.2z" />
+            </svg></a>
+        </div>
       </div>
       <p class="copyright-section">© Samantha Landingham 2022</p>
     </div>

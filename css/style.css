@@ -9,6 +9,10 @@ Secondary (Dark): #c88719;
 Black: #000000;
 White: #FFFFFF;
 */
+* {
+  box-sizing: border-box;
+}
+
 body {
   background-color: rgba(190, 246, 122, .25);
   font-family: 'Open Sans', sans-serif;
@@ -16,6 +20,11 @@ body {
 
 header {
   background-color: #8bc34a;
+  padding: 10px;
+  margin: 0 auto;
+  border-bottom: 3px solid #5a9216;
+  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
+  width: 100%;
 }
 
 h1, h2, h3, h4 {
@@ -54,6 +63,7 @@ p {
 
 footer {
   background-color: #8bc34a;
+  width: 100%;
 }
 
 ul {
@@ -64,12 +74,74 @@ img {
   width: 100%;
 }
 
-.bold-words{
+#hero {
+  background-color: #8bc34a;
+  text-align: center;
+  width: 100%;
+}
+
+#work {
+  padding: 0px;
+  margin: 16px;
+  width: 100%;
+}
+
+#my-story {
+  padding: 0px;
+  margin: 16px;
+  width: 100%;
+  text-align: left;
+}
+
+#skills-and-tools {
+  padding: 0px;
+  margin: 16px;
+  width: 100%;
+}
+
+#contact {
+  padding: 10px;
+  margin: 16px;
+  width: 100%;
+  background-color: #8bc34a;
+  padding: 10px;
+  margin: 0 auto;
+}
+
+#work .row {
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5a9216;
+}
+
+/* Layout styling */
+.container {
+  padding: 0 16px;
+}
+
+.logo {
+  max-width: 250px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.layout-link-icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+.link-icon {
+  width: 50px;
+}
+
+.bold-words {
   text-weight: 700;
 }
 
 .bullet-less-list {
   list-style-type: none;
+  text-align: center;
 }
 
 .green-bullet li::before {
@@ -97,6 +169,7 @@ img {
   font-size: 10px;
   font-weight: 300;
   color: #ffffff;
+  text-align: center;
 }
 
 .footer-title {
@@ -126,11 +199,30 @@ img {
   padding-right: 30px;
   padding-bottom: 12px;
   text-decoration: none;
+  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
 }
 
 .button:hover {
-  opacity: 0.8; /* Reduces the opacity of the button to 80% */
+  opacity: 0.8;
+  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+nav>ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+nav>ul>li {
+  display: inline-block;
+}
+
+nav>ul>li>a {
+  padding: 0 15px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #ffffff;
+  width: 100%;
 }
 
 .nav-button {

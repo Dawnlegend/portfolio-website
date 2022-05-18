@@ -16,54 +16,54 @@ White: #FFFFFF;
 body {
   background-color: rgba(190, 246, 122, .25);
   font-family: 'Open Sans', sans-serif;
+  margin: 1em;
 }
 
 header {
   background-color: #8bc34a;
-  padding: 10px;
+  padding: 0.625em;
   margin: 0 auto;
-  border-bottom: 3px solid #5a9216;
-  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
+  border-bottom: 0.1875em solid #5a9216;
+  box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
   width: 100%;
 }
 
 h1, h2, h3, h4 {
-  line-height: 22px;
+  line-height: 1.375em;
 }
 
 h1 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   color: #ffffff;
 }
 
 h2 {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   color: #000000;
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   color: #000000;
 }
 
 h4 {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 500;
   color: #000000;
 }
 
 p {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 400;
   color: #000000;
 }
 
 footer {
   background-color: #8bc34a;
-  width: 100%;
 }
 
 ul {
@@ -81,41 +81,47 @@ img {
 }
 
 #work {
-  padding: 0px;
-  margin: 16px;
+  padding: 0em;
   width: 100%;
 }
 
 #my-story {
-  padding: 0px;
-  margin: 16px;
+  padding: 0em;
+  margin: 1em;
   width: 100%;
   text-align: left;
 }
 
 #skills-and-tools {
-  padding: 0px;
-  margin: 16px;
+  padding: 0em;
+  margin: 1em;
   width: 100%;
 }
 
 #contact {
-  padding: 10px;
-  margin: 16px;
+  padding: 0.625em;
+  margin: 1em;
   width: 100%;
   background-color: #8bc34a;
-  padding: 10px;
+  padding: 0.625em;
   margin: 0 auto;
 }
 
 #work .row {
-  padding-bottom: 20px;
-  border-bottom: 1px solid #5a9216;
+  padding-top: 1.25em;
+  padding-bottom: 1.25em;
+  border-bottom: 0.0625em solid #5a9216;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
 }
 
 /* Layout styling */
 .container {
-  padding: 0 16px;
+  padding: 0 1em;
 }
 
 .logo {
@@ -132,7 +138,7 @@ img {
 }
 
 .link-icon {
-  width: 50px;
+  width: 3.125em;
 }
 
 .bold-words {
@@ -153,34 +159,34 @@ img {
 }
 
 .header-nav {
-  font-size: 16px;
+  font-size: 1em;
   font-weight: 400;
   color: #ffffff;
 }
 
 .header-span {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 400;
   color: #ffffff;
   text-align: center;
 }
 
 .copyright-section {
-  font-size: 10px;
+  font-size: 0.625em;
   font-weight: 300;
   color: #ffffff;
   text-align: center;
 }
 
 .footer-title {
-  font-size: 18px;
+  font-size: 1.125em;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
 }
 
 .footer-paragraph {
-  font-size: 14px;
+  font-size: 0.875em;
   font-weight: 700;
   color: #ffffff;
   text-align: center;
@@ -188,24 +194,31 @@ img {
 
 .button {
   background: #FFB74D;
-  border: 1px solid #C88719;
+  border: 0.0625em solid #C88719;
   font-family: OpenSans-Bold;
-  font-size: 14px;
+  font-size: 0.875em;
   color: #FFFFFF;
   letter-spacing: 0;
   display: inline-block;
-  padding-top: 12px;
-  padding-left: 30px;
-  padding-right: 30px;
-  padding-bottom: 12px;
+  padding-top: 0.75em;
+  padding-left: 1.875em;
+  padding-right: 1.875em;
+  padding-bottom: 0.75em;
   text-decoration: none;
-  box-shadow: 1px 1px 4px 0px rgba(50, 50, 50, 1);
+  box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
+  transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
   /* Reduces the opacity of the button to 80% */
   text-decoration: none;
+}
+
+.berlin-illustration {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
 }
 
 nav>ul {
@@ -218,7 +231,7 @@ nav>ul>li {
 }
 
 nav>ul>li>a {
-  padding: 0 15px;
+  padding: 0 0.9375em;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
@@ -238,3 +251,42 @@ nav>ul>li>a {
 .nav-button:focus {
   color: #ffe97d;
 }
+
+/* ==============================
+Medium devices (640px and larger)
+================================= */
+@media only screen and (min-width: 640px) {
+  header {
+    text-align: unset;
+    padding: 1.25em 0 0.8125em;
+  }
+
+  header>nav {
+    width: auto;
+    float: right;
+    margin-top: 0.25em;
+  }
+
+  #hero span {
+    display: block;
+  }
+
+  .col-md-6 {
+    width: 50%;
+  }
+
+  [class*="col-"] {
+    float: left;
+    padding: 0.625em;
+  }
+}
+
+/* ==============================
+Large devices (1024px or larger)
+================================= */
+@media only screen and (min-width: 1024px) {}
+
+/* ==============================
+X-large devices (1440px or larger)
+================================= */
+@media only screen and (min-width: 1440px) {}

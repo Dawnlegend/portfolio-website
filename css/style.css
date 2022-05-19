@@ -26,6 +26,7 @@ header {
   border-bottom: 0.1875em solid #5a9216;
   box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
   width: 100%;
+  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -78,23 +79,11 @@ img {
   background-color: #8bc34a;
   text-align: center;
   width: 100%;
+  display: inline-block;
 }
 
 #work {
   padding: 0em;
-  width: 100%;
-}
-
-#my-story {
-  padding: 0em;
-  margin: 1em;
-  width: 100%;
-  text-align: left;
-}
-
-#skills-and-tools {
-  padding: 0em;
-  margin: 1em;
   width: 100%;
 }
 
@@ -121,12 +110,11 @@ img {
 
 /* Layout styling */
 .container {
-  padding: 0 1em;
+  padding: 0;
 }
 
 .logo {
   max-width: 250px;
-  display: block;
   margin-left: auto;
   margin-right: auto;
 }
@@ -169,6 +157,7 @@ img {
   font-weight: 400;
   color: #ffffff;
   text-align: center;
+  padding-bottom: 0.625em;
 }
 
 .copyright-section {
@@ -221,6 +210,61 @@ img {
   height: auto;
 }
 
+@keyframes color-change {
+  0% {
+    fill: #edc655;
+  }
+
+  50% {
+    fill: #fcffad;
+  }
+
+  100% {
+    fill: #f76414;
+  }
+}
+
+.sun {
+  animation-duration: 4s;
+  animation-name: color-change;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+}
+
+@keyframes cloud-move {
+  from {
+    transform: translate(0, 50px);
+  }
+
+  to {
+    transform: translate(200px, 50px);
+  }
+}
+
+.cloud-front {
+  animation-duration: 30s;
+  animation-name: cloud-move;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: linear;
+}
+
+@keyframes cloud-move-reverse {
+  from {
+    transform: translate(446px, 48px);
+  }
+
+  to {
+    transform: translate(100px, 48px);
+  }
+}
+
+.cloud-back {
+  animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
 nav>ul {
   list-style-type: none;
   padding: 0;
@@ -261,7 +305,7 @@ Medium devices (640px and larger)
     padding: 1.25em 0 0.8125em;
   }
 
-  header>nav {
+  header>div>nav {
     width: auto;
     float: right;
     margin-top: 0.25em;
@@ -269,6 +313,10 @@ Medium devices (640px and larger)
 
   #hero span {
     display: block;
+  }
+
+  .logo {
+    padding-left: 1em;
   }
 
   .col-md-6 {
@@ -284,9 +332,18 @@ Medium devices (640px and larger)
 /* ==============================
 Large devices (1024px or larger)
 ================================= */
-@media only screen and (min-width: 1024px) {}
+@media only screen and (min-width: 1024px) {
+  hero-container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+  }
 
-/* ==============================
-X-large devices (1440px or larger)
-================================= */
-@media only screen and (min-width: 1440px) {}
+  .col-lg-7 {
+    width: 60%;
+  }
+
+  .col-lg-5 {
+    width: 40%;
+  }
+}

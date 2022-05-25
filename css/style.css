@@ -114,7 +114,7 @@ img {
 }
 
 .logo {
-  max-width: 250px;
+  max-width: 150px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -317,6 +317,7 @@ Medium devices (640px and larger)
 
   .logo {
     padding-left: 1em;
+      max-width: 250px;
   }
 
   .col-md-6 {

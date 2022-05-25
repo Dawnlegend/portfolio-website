@@ -26,7 +26,6 @@ header {
   border-bottom: 0.1875em solid #5a9216;
   box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
   width: 100%;
-  text-align: center;
 }
 
 h1, h2, h3, h4 {
@@ -135,8 +134,8 @@ img {
 
 .bullet-less-list {
   list-style-type: none;
-  text-align: center;
 }
+
 
 .green-bullet li::before {
   content: "•";
@@ -270,16 +269,12 @@ nav>ul {
   padding: 0;
 }
 
-nav>ul>li {
-  display: inline-block;
-}
 
 nav>ul>li>a {
   padding: 0 0.9375em;
   text-transform: uppercase;
   font-weight: 700;
   color: #ffffff;
-  width: 100%;
 }
 
 .nav-button {
@@ -296,20 +291,51 @@ nav>ul>li>a {
   color: #ffe97d;
 }
 
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+.navtoggle li .icon {
+  position: absolute;
+  padding-right: 0 ;
+  right: 0;
+  top: 2px;
+  font-size: 20px;
+}
+
+header nav {
+  width: auto;
+  float: right;
+  margin-top: 0.25em;
+}
+
 /* ==============================
 Medium devices (640px and larger)
 ================================= */
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 641px) {
   header {
     text-align: unset;
     padding: 1.25em 0 0.8125em;
   }
 
-  header>div>nav {
-    width: auto;
-    float: right;
-    margin-top: 0.25em;
+  .navtoggle li:not(:last-child) {
+    display: inline-block;
   }
+
+  .navtoggle li:last-child {
+    display: none;
+  }
+
+  nav>ul>li {
+    display: inline-block;
+  }
+
+
+
 
   #hero span {
     display: block;

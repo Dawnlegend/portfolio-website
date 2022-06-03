@@ -1,6 +1,6 @@
 /*
 Colors used:
-Primary (Green): #8bc34a
+Primary (Green): #3f5a1e (background color for header and footer)
 Primary (Light): #bef67a
 Primary (Dark): #5a9216
 Secondary (Orange): #ffb74d;
@@ -14,56 +14,59 @@ White: #FFFFFF;
 }
 
 body {
-  background-color: rgba(190, 246, 122, .25);
+  background-color: rgba(190, 246, 122, 0.25);
   font-family: 'Open Sans', sans-serif;
   margin: 1em;
 }
 
 header {
-  background-color: #8bc34a;
+  background-color: #3f5a1e;
   padding: 0.625em;
   margin: 0 auto;
-  border-bottom: 0.1875em solid #5a9216;
-  box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
+  border-bottom: 0.1875em solid #c88719;
+  box-shadow: 0.0625em 0.0625em 0.25em 0 rgba(50, 50, 50, 1);
   width: 100%;
 }
 
-h1, h2, h3, h4 {
+h1,
+h2,
+h3,
+h4 {
   line-height: 1.375em;
 }
 
 h1 {
   font-size: 1.125em;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 h2 {
   font-size: 1.125em;
   font-weight: 700;
-  color: #000000;
+  color: #000;
 }
 
 h3 {
   font-size: 1em;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
 h4 {
   font-size: 1em;
   font-weight: 500;
-  color: #000000;
+  color: #000;
 }
 
 p {
   font-size: 0.875em;
   font-weight: 400;
-  color: #000000;
+  color: #000;
 }
 
 footer {
-  background-color: #8bc34a;
+  background-color: #3f5a1e;
 }
 
 ul {
@@ -75,30 +78,28 @@ img {
 }
 
 #hero {
-  background-color: #8bc34a;
+  background-color: #3f5a1e;
   text-align: center;
   width: 100%;
   display: inline-block;
 }
 
 #work {
-  padding: 0em;
+  padding: 0;
   width: 100%;
 }
 
 #contact {
   padding: 0.625em;
-  margin: 1em;
   width: 100%;
-  background-color: #8bc34a;
-  padding: 0.625em;
+  background-color: ##3f5a1e;
   margin: 0 auto;
 }
 
 #work .row {
   padding-top: 1.25em;
   padding-bottom: 1.25em;
-  border-bottom: 0.0625em solid #5a9216;
+  border-bottom: 0.0625em solid #3f5a1e;
 }
 
 .row::after {
@@ -129,7 +130,7 @@ img {
 }
 
 .bold-words {
-  text-weight: 700;
+  font-weight: 700;
 }
 
 .bullet-less-list {
@@ -141,7 +142,7 @@ img {
   color: #5a9216;
   display: inline-block;
   width: 1em;
-  margin-left: -1em
+  margin-left: -1em;
 }
 
 .header-nav {
@@ -153,7 +154,7 @@ img {
 .header-span {
   font-size: 1.125em;
   font-weight: 400;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
   padding-bottom: 0.625em;
 }
@@ -161,44 +162,40 @@ img {
 .copyright-section {
   font-size: 0.625em;
   font-weight: 300;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
 .footer-title {
   font-size: 1.125em;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
 .footer-paragraph {
   font-size: 0.875em;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
   text-align: center;
 }
 
 .button {
-  background: #FFB74D;
-  border: 0.0625em solid #C88719;
+  background: #ffb74d;
+  border: 0.0625em solid #c88719;
   font-family: OpenSans-Bold;
   font-size: 0.875em;
-  color: #FFFFFF;
+  color: #3f5a1e;
   letter-spacing: 0;
   display: inline-block;
-  padding-top: 0.75em;
-  padding-left: 1.875em;
-  padding-right: 1.875em;
-  padding-bottom: 0.75em;
+  padding: 0.75em 1.875em;
   text-decoration: none;
-  box-shadow: 0.0625em 0.0625em 0.25em 0em rgba(50, 50, 50, 1);
+  box-shadow: 0.0625em 0.0625em 0.25em 0 rgba(50, 50, 50, 1);
   transition: 0.2s opacity;
 }
 
 .button:hover {
   opacity: 0.8;
-  /* Reduces the opacity of the button to 80% */
   text-decoration: none;
 }
 
@@ -228,7 +225,6 @@ img {
   animation-iteration-count: infinite;
   animation-direction: alternate;
   animation-timing-function: linear;
-}
 }
 
 @keyframes cloud-move {
@@ -263,21 +259,21 @@ img {
   animation: 34s cloud-move-reverse infinite alternate linear;
 }
 
-nav>ul {
+nav > ul {
   list-style-type: none;
   padding: 0;
 }
 
-nav>ul>li>a {
+nav > ul > li > a {
   padding: 0 0.9375em;
   text-transform: uppercase;
   font-weight: 700;
-  color: #ffffff;
+  color: #fff;
 }
 
 .nav-button {
   text-decoration: none;
-  color: #ffffff;
+  color: #ffb74d;
 }
 
 .nav-button:visited {
@@ -307,7 +303,8 @@ nav>ul>li>a {
   border-top: 1px solid rgba(255, 183, 77, 1);
 }
 
-.navtoggle, .navtoggle.responsive {
+.navtoggle,
+.navtoggle.responsive {
   position: relative;
 }
 
@@ -353,7 +350,7 @@ Medium devices (640px and larger)
     display: none;
   }
 
-  nav>ul>li {
+  nav > ul > li {
     display: inline-block;
   }
 
@@ -381,7 +378,7 @@ Medium devices (640px and larger)
 Large devices (1024px or larger)
 ================================= */
 @media only screen and (min-width: 1024px) {
-  hero-container {
+  .hero-container {
     max-width: 1200px;
     margin-left: auto;
     margin-right: auto;
